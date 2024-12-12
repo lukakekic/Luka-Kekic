@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <img src="../logo.png" alt="Logo" class="logo">
+        <h1>STRANICA O MARADONI</h1>
+    </header>
+    <nav class="meni">
+        <a href="../index.html">Početna</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="../Galerija/galerija.html">Galerija</a> 
+       
+    </nav>
+    <main>
+        <div class="kontaktsklasa">
+            <h2>Kontaktirajte nas</h2>
+            <form action="Kontaktiranje" method="post">
+               
+                <label for="ime">Ime:</label>
+                <input type="text" id="ime" name="ime" required placeholder="Unesite svoje ime">
+
+                
+                <label for="prezime">Prezime:</label>
+                <input type="text" id="prezime" name="prezime" required placeholder="Unesite svoje prezime">
+
+           
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Unesite svoj email">
+
+             
+                <label for="telefon">Broj telefona:</label>
+                <input type="tel" id="telefon" name="telefon" placeholder="Unesite svoj broj telefona">
+
+            
+                <p>Da li ste pogledali film o Maradoni?</p>
+                <label for="pogledali">
+                    <input type="radio" id="pogledali" name="film" value="da" required> Da
+                </label>
+                <label for="nisamPogledao">
+                    <input type="radio" id="nisamPogledao" name="film" value="ne"> Ne
+                </label>
+
+          
+                <label for="poruka">Poruka:</label>
+                <textarea id="poruka" name="poruka" rows="5" required placeholder="Unesite svoju poruku"></textarea>
+
+           
+                <button type="submit">Pošalji</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Stranica o Maradoni</p>
+    </footer>
+</body>
+</html>
